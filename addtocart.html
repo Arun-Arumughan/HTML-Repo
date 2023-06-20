@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<!-- <script>
+    var item=[];
+
+function cartItem()
+{
+    var itemList=document.getElementById('cart').value;
+    item.push(itemList);
+    document.getElementById('cart').value='';
+    printData();
+}
+
+function printData()
+{
+    var sno=0;
+    var emptystr="";
+
+    item.forEach(function(value,index) {
+        sno +=1;
+        emptystr+='<tr><td>'+sno+'</td><td>'+value+'</td></tr>';
+    })
+    document.getElementById('tbodyid').innerHTML=emptystr;
+}
+</script> -->
+
+</head>
+<body>
+<!-- <div class="add">
+    <h1>Add To Cart</h1>
+ </div>
+ <div class="">
+    <input type="text" id="cart" name="cart" value=""/>
+    <button type="button" class="items bg-primary text-white p-2" onclick="cartItem()">ADD</button>
+    
+ </div>
+ <table>
+    <thead>
+        <tr><th>My cart items</th></tr>
+    </thead>
+    <tbody id="tbodyid"></tbody>
+ </table> -->
+ <!-- <input type="text" id="username" name="username" value=""/>
+    <input type="button" value="click"onclick='add()'> -->
+<!-- <div>
+    <input type="text" id="user1" name="username" value=""/>
+ <input type="password" id="pass" name="password" value=""/>
+</div>
+<button type="button" onclick="validate()">click</button> -->
+<!-- <div>
+    <label for="">Enter a value</label>
+    <input type="text" id="txt1" name="user" value=""/>
+    <input type="text" id="txt2" name="user" value=""/>
+    <input type="button" id="add" onclick="add()" value="addition"/>
+    <input type="button" id="sub" onclick="subs()" value="substraction"/>
+    <input type="button" id="multi"onclick="multiply()" value="multiply"/>
+    <input type="button" id="div" onclick="division()" value="division"/>
+    <h3 id="head"></h3>  -->
+<!-- </div> -->
+ <script src="../addtocart.js"></script>
+</body>
+ </html>
+
+ <!-- iteration 1 6 -->
+
+  <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function droplist()
+        {
+            var a=document.getElementById('slt').value;
+            var b='<option>select</option>';
+            for(i=0;i<=a;i++)
+            {
+                b+="<option>"+i+"</option>";
+            }
+            document.getElementById('dropdwn').innerHTML=b;
+
+        }
+
+    </script>
+</head>
+<body>
+<input type="text" id="slt" name="username" value=""/>
+<select id="dropdwn"><option>select</option></select>
+<input type="button" id="btn" value="click" onclick="droplist()"/>
+</body>
+</html>  -->
+
+<!-- iteration 2 7 -->
+
+ <!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script>
+              var down='<option>select</option>';
+              function dropdown()
+              {
+                var a=document.getElementById('txt').value;
+                for(i=0;i<=a;i++)
+                {
+                    down+='<option>'+i+'</option>';
+                }
+                document.getElementById('slt').innerHTML=down;
+              }
+        </script>
+    </head>
+    <body>
+        <input type="text" id="txt" value="" onkeyup="dropdown()"/>
+        <select id="slt">select</select>
+
+    </body>
+</html>  -->
+
+<!--iteration 3 8  -->
+<!--  
+    <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script>
+            function operator()
+            {
+                var x=document.getElementById('num').value;
+                var y='<option>select</option>';
+                for(i=0;i<=x;i++)
+                {
+                    y+='<option>'+i+'</option>';
+                }
+                document.getElementById('dropdwn1').innerHTML=y;
+            }
+            function auto()
+            {
+                var a=document.getElementById('dropdwn1').value;
+                var b='<option>select</option>';
+                for(j=0;j<=a;j++)
+                {
+                    b+='<option>'+j+'</option>';
+                }
+                document.getElementById('dropdwn2').innerHTML=b;
+            }
+             
+        </script>
+    </head>
+    <body>
+        <input type="number" id="num" name="num" value=""/>
+        <select id="dropdwn1" onchange="auto()"><option>select</option></select>
+        <input type="button" id="btn" value="click" onclick="operator()"/>
+        <select id="dropdwn2" ><option>select</option></select>
+    </body>  
+</html>     -->
+
+ <!-- iteration 4 9 --> 
+  <!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script>
+            function dataIncert()
+            {
+                var a=parseInt(document.getElementById('txt').value);
+                var b='<option value="">select</option>';
+                for(let i=0;i<=a;i++)
+                {
+                    b +='<option value="'+i+'">'+i+'</option>'
+                }
+                document.getElementById('slt').innerHTML=b;
+            }
+            function dataOut()
+            {
+                var c=parseInt(document.getElementById('slt').value);
+                var d="";
+                for(let j=0;j<=c;j++)
+                {
+                    d +='<tr><td>'+j+'</td><td><input type="text"</td><td><input type="text"</td></tr>';
+                }
+                document.getElementById('tbodyid').innerHTML=d;
+            }
+
+        </script>
+    </head>
+    <body>
+        <div>
+            <label>Enter a value</label>
+            <input type="text" id="txt" value=""/>
+            <label>selection 1</label>
+            <select name="select" onchange="dataOut()" id="slt"></select>
+            <button type="button" id="btn" onclick="dataIncert()">click</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>S.NO</th>
+                    <th>username</th>
+                    <th>password</th>
+                </tr>
+            </thead>
+            <tbody id="tbodyid"></tbody>
+        </table>
+    </body>
+</html>   -->
+
+<!-- ex-10 -->
+
+  <!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script>
+            function data()
+            {
+                var a=document.getElementById('txt1').value;
+                var b=document.getElementById('dropdwn').value;
+                var first=a.slice(0,6);
+                var c=new Date(b);
+                var last=c.getDate();
+                var com=first + last;
+                document.getElementById('txt3').value=com;
+            }
+         
+
+        </script>
+    </head>
+    <body>
+        <div>
+            <label>Enter your name</label>
+            <input type="text" id="txt1" value=""/>
+        </div>
+        <div>
+            <label>Date of birth</label>
+            <input type="Date" id="dropdwn" value=""/>
+        </div>
+        <div>
+            <label>password:</label>
+            <input type="text" id="txt3" value=""/>
+            </div>
+        <input type="submit" onclick="data()" id="sub" value="submit"/>
+        </form>
+    </body>
+</html>    -->
+
+<!-- ex-11 -->
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function check(){
+    var date = document.getElementById("date").value;
+    var d = new Date(date);
+    d.setDate(d.getDate()+5);
+    var year  = d.getFullYear();
+    var month  = (d.getMonth()+1);
+    var dat  = d.getDate();
+    var aft = dat + "/" + month + "/" + year;
+    document.getElementById("after").value = aft;
+    var d1 = new Date(date);
+    d1.setDate(d1.getDate()-5);
+    var dat1 = d1.getDate();
+    var bef = dat1 + "/" + month + "/" + year;
+    document.getElementById("before").value = bef;
+}
+    </script>
+</head>
+<body>
+    <label>Select Date</label>
+    <input type="date" name="" id="date"><br>
+    <label>After 5 days</label>
+    <input type="text" name="" id="after"><br>
+    <label>Before 5 days</label>
+    <input type="text" name="" id="before"><br>
+    <input type="button" value="Check" onclick="check()">
+</body>
+</html>  -->
